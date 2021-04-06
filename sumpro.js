@@ -2,7 +2,7 @@ function sumDigProd(){
    let num = Array.from(arguments);
    let sum = num.reduce((a,b)=> a+b);
    let count = Count(sum.toString().split('').map((value)=>parseInt(value)));
-   console.log(count);
+   return count;
 }
 function Count(number , step = 1){
     let sum;
@@ -15,6 +15,6 @@ function Count(number , step = 1){
     return sum;
 }
 
-sumDigProd(16, 28)
-sumDigProd(0)
-sumDigProd(1, 2, 3, 4, 5, 6)
+console.log(sumDigProd(16, 28));
+console.log(sumDigProd(0));
+console.log(sumDigProd(1,2,3,4,5,6));

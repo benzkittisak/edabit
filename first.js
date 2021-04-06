@@ -8,7 +8,6 @@ function firstRepeat(str){
         }
     }
     return -1;
-    console.log(arr);
 }
 
 console.log(firstRepeat("legolas"));
