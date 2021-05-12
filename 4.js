@@ -17,3 +17,4 @@ function removeLastVowel(str){
 console.log(removeLastVowel("Those who dare to fail miserably can achieve greatly."));
 console.log(removeLastVowel("Love is a serious mental disease."));
 console.log(removeLastVowel("Get busy living or get busy dying."));
+
