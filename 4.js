@@ -1,17 +1,14 @@
-function removeLastVowel(str){
-    let words = str.split(' ')
-    let result = [];
-
-    for (const value of words) {
-        let pos = 0;
-        for(let i = 0 ; i<value.length ; i++){
-            if(value[i].match(/[aeiou]/)){
-                pos = i;
+function removeLastVowel(text){
+    text = text.split(" ");
+    for(i=0;i<text.length;i++){
+        for(j=text[i].length-1;j>=0;j--){
+            if(text[i][j].match(/[aeiou]/)){
+                text[i] = text[i].slice(0,j)+text[i].slice(j+1);
+                break;
             }
         }
-        result.push(value.replace(value[pos],''));
     }
-    return result.join(' ');
+    return text.join(' '); 
 }
 
 console.log(removeLastVowel("Those who dare to fail miserably can achieve greatly."));
