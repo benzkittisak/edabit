@@ -8,6 +8,7 @@ function firstRepeat(str){
         }
     }
     // ASD
+
     return -1;
 }
 
